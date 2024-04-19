@@ -6,6 +6,8 @@
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body class="main">
   <head class="section container">
@@ -43,14 +45,6 @@
         </div>
     </div>
 
-    <script>
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-    </script>
   </head>
   <!-- main section -->
 <section  class="pb-5">
@@ -104,10 +98,10 @@
         </div>
         <!-- Card 3 -->
         <div class="flex-1 bg-white rounded-lg shadow-lg overflow-hidden">
-            <img src="./images/bike-7.png" alt="Sample Image" class="w-[100%] h-[80%] md:w-full md:h-56object-cover">
+            <img src="./images/bike-7.png" alt="Sample Image" class="w-[100%] h-[80%] md:w-full md:h-56 object-cover">
             <div class="p-6">
                 <h2 class="text-lg font-bold text-gray-900 mb-2">Card Title 3</h2>
-                <p class="text-gray-700 mb-4">This is the description for card 3. It includes relevant information and key details.</p>
+                <p class="text-gray-700 mb-4">This is the description for card 3. It includes relevant information and key details. howw djsl</p>
                 <button class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Learn More</button>
             </div>
         </div>
@@ -151,5 +145,99 @@
     </div>
     
 </section>
+<!-- question section -->
+<section class="p-5">
+    <div class="flex flex-col md:flex-row ">
+        <div>
+            <img class="w-[100%]" src="./images/faq.png" alt="">
+        </div>
+        <div class="faq px-5">
+            <div class="flex items-center rounded-md shadow-md mb-4">
+                <p class="flex-1 px-3 question-text">What are the most important things I should
+                    know about riding a bike?
+                </p>
+
+                <button class="menu-icon px-3">
+                    menu</button>
+            </div>
+            <div class="answer hidden bg-white p-4 rounded-md shadow-md">
+                <p>Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will help you be a more </p>
+            </div>
+            
+            <!-- Add more questions and answers here -->
+            <div class="flex items-center rounded-md shadow-md mb-4">
+                <p class="flex-1 px-3 question-text">What are the most important things I should
+                    know about riding a bike?
+                </p>
+                <button class="menu-icon px-3">Menu</button>
+
+            </div>
+            <div class="answer hidden bg-white p-4 rounded-md shadow-md">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima maiores magni sit autem labore! Voluptatibus repudiandae, libero debitis accusantium quam possimus tempora numquam consectetur velit! Aspernatur tenetur corrupti sequi nemo. </p>
+            </div>
+            <div class="flex items-center rounded-md shadow-md mb-4">
+                <p class="flex-1 question-text">How can I tell if my helmet is old and I need a 
+                    new one?</p>
+                <button class="menu-icon">Menu Icon</button>
+            </div>
+            <div class="answer hidden bg-white p-4 rounded-md shadow-md">
+                <p>Answer to Question 2 goes here Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, nostrum amet nulla voluptas deleniti eveniet error omnis libero nemo at tempora? Ut dicta consequuntur officiis perspiciatis voluptatum quas deserunt quos.].</p>
+            </div>
+            
+            <!-- Add more questions and answers here -->
+            <div class="flex items-center rounded-md shadow-md mb-4">
+                <p class="flex-1 question-text">How can I tell if my helmet is old and I need a 
+                    new one?</p>
+                <button class="menu-icon">Menu Icon</button>
+            </div>
+            <div class="answer hidden bg-white p-4 rounded-md shadow-md">
+                <p>Answer to Question 2 goes here Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, nostrum amet nulla voluptas deleniti eveniet error omnis libero nemo at tempora? Ut dicta consequuntur officiis perspiciatis voluptatum quas deserunt quos.].</p>
+            </div>
+            <div class="flex items-center rounded-md shadow-md mb-4">
+                <p class="flex-1 question-text">How can I tell if my helmet is old and I need a 
+                    new one?</p>
+                <button class="menu-icon">Menu Icon</button>
+            </div>
+            <div class="answer hidden bg-white p-4 rounded-md shadow-md">
+                <p>Answer to Question 2 goes here Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, nostrum amet nulla voluptas deleniti eveniet error omnis libero nemo at tempora? Ut dicta consequuntur officiis perspiciatis voluptatum quas deserunt quos.].</p>
+            </div>
+            <div class="flex items-center rounded-md shadow-md mb-4">
+                <p class="flex-1 question-text">How can I tell if my helmet is old and I need a 
+                    new one?</p>
+                <button class="menu-icon">Menu Icon</button>
+            </div>
+            <div class="answer hidden bg-white p-4 rounded-md shadow-md">
+                <p>Answer to Question 2 goes here Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, nostrum amet nulla voluptas deleniti eveniet error omnis libero nemo at tempora? Ut dicta consequuntur officiis perspiciatis voluptatum quas deserunt quos.].</p>
+            </div>
+        </div>
+    </div>
+ 
+    
+    
+</section>
+
+<script>
+   const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+
+mobileMenuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+});// Get all question buttons (menu icons)
+
+// Get all menu icons
+const menuIcons = document.querySelectorAll('.menu-icon');
+
+// Loop through each menu icon
+menuIcons.forEach((icon, index) => {
+    // Add click event listener to each icon
+    icon.addEventListener('click', () => {
+        // Toggle the visibility of the corresponding answer
+        const answer = document.querySelectorAll('.answer')[index];
+        answer.classList.toggle('hidden');
+    });
+});
+
+
+</script>
 </body>
 </html>
