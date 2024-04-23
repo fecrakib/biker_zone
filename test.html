@@ -17,6 +17,11 @@
   </head>
   <body>
     <div class="container">
+      <div class="search-box">
+
+        <input type="text" id="searchInput" placeholder="Search...">
+        <button id="searchButton">Search</button>
+    </div>
       <div class="card">
         <h1 class="card-title">Todo App</h1>
         <div class="card-body">
@@ -31,6 +36,8 @@
               Add Todo
             </button>
           </form>
+          <p id="noResultsMessage" style="display: none;">No results found</p>
+
           <p id="message"></p>
           <ul id="lists">
             
